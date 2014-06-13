@@ -16,14 +16,14 @@ makeCacheMatrix <- function(thismatrix = matrix())
 {
     thisinverse <- NULL
     
-    # set the inverse of the CacheMatrix
+    # set the base matrix
     set <- function(thatmatrix)
     {
         thismatrix <<- thatmatrix
         thisinverse <<- NULL
     }
     
-    # get the inverse of the CacheMatrix
+    # get the base matrix
     get <- function() thismatrix
     
     # set the inverse of the CacheMatrix
